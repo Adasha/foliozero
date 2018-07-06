@@ -6,7 +6,7 @@ A tutorial portfolio site.
 
 To teach the basics of web development to art students with zero prior knowledge (and a likely expectation this stuff is 'easy'), in six hours or less.
 
-##Success?
+## Success?
 
 Lol no. Of course not. Gave it a go though. If only Adobe hadn't killed Muse...
 
