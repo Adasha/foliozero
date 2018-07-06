@@ -1,0 +1,634 @@
+@charset "utf-8";
+
+
+/* import server fonts */
+@import "../fonts/dejavu-serif_regular/stylesheet.css";
+
+
+
+
+
+/* base level stuff */
+
+
+html {}
+
+body {
+	/* LAYOUT */
+	padding: 0; /* spacing around edges */
+	/* TEXT */
+	font-family: 'Raleway', sans-serif;
+	font-size: 100%; /* tweak the overall font scaling */
+	/* BACKGROUND */
+	background-color: rgba(240,240,240,1.00); /* the overall page's background colour */
+	background-image: -webkit-linear-gradient(270deg,rgba(230,230,230,1.00) 0%,rgba(193,193,193,1.00) 100%);
+	background-image: -moz-linear-gradient(270deg,rgba(230,230,230,1.00) 0%,rgba(193,193,193,1.00) 100%);
+	background-image: -o-linear-gradient(270deg,rgba(230,230,230,1.00) 0%,rgba(193,193,193,1.00) 100%);
+	background-image: linear-gradient(180deg,rgba(230,230,230,1.00) 0%,rgba(193,193,193,1.00) 100%);
+	background-attachment: fixed;
+	/* DON'T TOUCH! */
+	margin: 0;
+	line-height: 1;
+	font-style: normal;
+	font-weight: 400;
+}
+
+h2, h3 {
+	font-family: dejavu_serifbook, serif;
+}
+
+*.wrapper {
+	/* LAYOUT */
+	width: 70%; /* preferred site width */
+	min-width: 480px; /* minimum site width */
+	max-width: 1920px; /* maximum site width */
+	/* DON'T TOUCH! */
+	min-height: 100%;
+	margin: 0 auto;
+}
+
+@media only screen and (max-device-width: 480px) {
+	
+	*.wrapper {
+		/* DON'T TOUCH! */
+		width: 100%;
+		font-size: 300%;
+	}
+	
+}
+
+/* --- */
+
+
+
+
+
+
+
+
+
+
+/* ------------ */
+/* module SYSTEM */
+/* ------------ */
+
+
+*.module {
+	/* DON'T TOUCH! */
+	display: flex;
+	box-sizing: border-box;
+}
+
+*.module.gap {
+	/* LAYOUT */
+	margin-top: 1em; /* change to alter the gap between modules when applied */
+}
+
+*.module > * {
+	/* DON'T TOUCH! */
+	box-sizing: border-box;
+}
+
+*.module *.text {
+	
+}
+
+*.module *.media {
+	/* DON'T TOUCH! */
+	display: flex;
+	overflow: hidden;
+}
+
+*.module *.icon {
+	/* DON'T TOUCH! */
+	background-size: contain;
+}
+
+*.module *.media img {
+	/* DON'T TOUCH! */
+	width: 100%;
+	height: auto;
+}
+
+*.module *.media iframe {
+	/* LAYOUT */
+	min-height: 320px;
+}
+
+/* DON'T TOUCH ANY OF THESE! */
+*.fixed {flex: 0 0 auto}
+*.loose {flex: 1 1 auto}
+*.half {flex: 0 0 50%}
+*.onethird {flex: 0 0 33.333%}
+*.twothirds {flex: 0 0 66.666%}
+*.onequarter {flex: 0 0 25%}
+*.threequarters {flex: 0 0 75%}
+*.onefifth {flex: 0 0 20%}
+*.twofifths {flex: 0 0 40%}
+*.threefifths {flex: 0 0 60%}
+*.fourfifths {flex: 0 0 80%}
+*.onesixth {flex: 0 0 16.666%}
+*.threesixths {flex: 0 0 49.999%}
+*.fivesixths {flex: 0 0 83.333%}
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------- */
+/* BANNER/HEADING/HIGHLIGHT moduleS */
+/* ------------------------------- */
+
+
+*.banner {
+    /* LAYOUT */
+    padding: 1em;
+    /* BACKGROUND */
+    background-color: rgb(240,34,34);
+}
+
+*.heading {
+	/* LAYOUT */
+	padding: 0.5em 1em;
+	/* BACKGROUND */
+	background-color: rgb(240,34,34);
+}
+
+*.subheading {
+    /* LAYOUT */
+    padding: 0.25em 1em;
+    /* BACKGROUND */
+    background-color: rgb(34,34,34);
+}
+
+*.banner {
+	/* DON'T TOUCH! */
+	flex-flow: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+}
+
+*.banner h1, *.heading h1, *.heading h2, *.subheading h2 {margin: 0}
+
+*.banner h1 {
+	/* TEXT */
+	color: rgb(255,255,255);
+	font-family: 'Bungee', cursive;
+	font-weight: bold;
+	font-size: 1.2rem;
+	text-shadow: 0px 1px 2px rgba(0,0,0,0.5);
+}
+
+*.heading h1 {
+	/* TEXT */
+	color: rgb(255,255,255);
+	font-weight: bold;
+	font-size: 1.2rem;
+}
+
+*.heading h2 {
+	/* TEXT */
+	color: rgb(255,255,255);
+	font-variant: small-caps;
+	text-shadow: 0px 1px 2px rgba(0,0,0,0.5);
+	text-transform: capitalize;
+}
+
+*.subheading h2 {
+	/* TEXT */
+	color: rgb(255,255,255);
+	font-variant: small-caps;
+	text-shadow: 0px 1px 2px rgba(0,0,0,0.5);
+	text-transform: capitalize;
+}
+
+*.banner nav {
+	/* TEXT */
+	color: rgb(255,255,255);
+	font-size: 1.0rem;
+	text-transform: uppercase;
+	text-shadow: 0px 2px 2px rgba(0,0,0,0.5);
+	white-space: nowrap;
+}
+
+*.banner nav > a {
+	/* TEXT */
+	color: inherit;
+	font-weight: bold;
+	font-size: 90%;
+	text-decoration: none;
+}
+
+*.banner nav a + a {
+	/* LAYOUT */
+	margin-left: 1em;
+}
+
+/* ------------------- module END ------------------- */
+
+
+
+
+
+
+
+
+
+
+/* ------------ */
+/* BOOST moduleS */
+/* ------------ */
+
+
+*.boost {
+	/* LAYOUT */
+	height: 26vw;
+	min-height: 220px;
+	max-height: 340px;
+	/* BACKGROUND */
+	background-image: none;
+	background-position: center center;
+	background-size: cover; /* change to 'contain' if you want to see the whole picture */
+	background-repeat: no-repeat;
+	/* DON'T TOUCH! */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* ------------------- module END ------------------- */
+
+
+
+
+
+
+
+
+
+
+/* ------------ */
+/* DETAIL module */
+/* ------------ */
+
+
+*.detail {
+	/* DON'T TOUCH! */
+	align-content: center;
+	align-items: stretch;
+}
+
+*.detail *.media {
+	/* LAYOUT */
+	justify-content: center;
+	align-items: center;
+	/* BACKGROUND */
+	background-color: rgba(172,172,172,1.00);
+	background-image: url(../images/fleurdelis-pattern-transparent.png);
+	background-position: center center;
+	background-size: 75%;
+	background-repeat: repeat;
+}
+
+*.detail *.text {
+    /* LAYOUT */
+    padding: 2em 3em;
+    /* TEXT */
+    text-align: center;
+    /* BACKGROUND */
+    background-color: rgb(220,220,220);
+    background-image: -webkit-linear-gradient(270deg,rgba(222,222,222,1.00) 0.41%,rgba(192,192,192,1.00) 100%);
+    background-image: -moz-linear-gradient(270deg,rgba(222,222,222,1.00) 0.41%,rgba(192,192,192,1.00) 100%);
+    background-image: -o-linear-gradient(270deg,rgba(222,222,222,1.00) 0.41%,rgba(192,192,192,1.00) 100%);
+    background-image: linear-gradient(180deg,rgba(222,222,222,1.00) 0.41%,rgba(192,192,192,1.00) 100%);
+}
+
+
+*.detail h2 { /* heading */
+	/* LAYOUT */
+	margin: 0 0 0.5em;
+	/* TEXT */
+	color: rgb(80,80,80);
+	font-style: italic;
+	font-size: 150%;
+}
+
+*.detail p { /* paragraph */
+	/* LAYOUT */
+	margin: 0.75em 0 0;
+	/* TEXT */
+	color: rgb(65,65,65);
+	line-height: 1.2;
+}
+
+/* ------------------- module END ------------------- */
+
+
+
+
+
+
+
+
+
+
+/* -------------- */
+/* EXHIBIT moduleS */
+/* -------------- */
+
+
+*.exhibit {
+	/* DON'T TOUCH! */
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+*.exhibit > img, *.exhibit > video, *.exhibit > iframe {
+	/* DON'T TOUCH! */
+	display: module;
+	width: 100%;
+	height: auto;
+}
+
+*.exhibit > *:not(img):not(video):not(iframe) {
+    /* LAYOUT */
+    padding: 1.2em;
+    right: 1em;
+    bottom: 1em;
+    /* TEXT */
+    color: rgb(255,255,255);
+    text-align: right;
+    text-shadow: 0px 0px 2px rgba(0,0,0,1);
+    /* BACKGROUND */
+    background-color: rgba(0,0,0,0.5);
+    /* DON'T TOUCH! */
+    position: absolute;
+}
+
+*.exhibit h3 {
+	/* LAYOUT */
+	margin: 0 0 0.25em;
+	/* TEXT */
+	font-size: 135%;
+}
+
+*.exhibit p {
+	/* LAYOUT */
+	margin: 0.8em 0 0;
+}
+
+/* ------------------- module END ------------------- */
+
+
+
+
+
+
+
+
+
+
+/* ---------- */
+/* INFO module */
+/* ---------- */
+
+
+*.info {
+	/* DON'T TOUCH! */
+	justify-content: space-between;
+}
+
+*.info > * {
+	/* LAYOUT */
+	width: 49.75%;
+	padding: 1em;
+	/* TEXT */
+	color: rgb(255,255,255);
+	font-size: 90%;
+	text-align: center;
+	/* BACKGROUND */
+	background-color: rgb(40,40,40);
+	/* DON'T TOUCH! */
+	box-sizing: border-box;
+	flex: 0 0 auto;
+}
+
+
+*.info h3 {
+	/* LAYOUT */
+	margin: 0 0 0.5em;
+	/* TEXT */
+	font-weight: bold;
+	font-size: 110%;
+}
+
+*.info p {
+	/* LAYOUT */
+	margin: 0;
+	/* TEXT */
+	color: rgb(250,250,250);
+}
+
+/* ------------------- module END ------------------- */
+
+
+
+
+
+
+
+
+
+
+/* ------------- */
+/* PROJECT module */
+/* ------------- */
+
+
+*.project {
+	/* DON'T TOUCH! */
+	align-content: flex-start;
+	align-items: stretch;
+}
+
+*.project *.media { /* right column (project) */
+	/* LAYOUT */
+	justify-content: center;
+	align-items: center;
+	/* BACKGROUND */
+	background-color: rgb(0,0,0);
+}
+
+*.project *.text { /* left column (text) */
+	/* LAYOUT */
+	padding: 1rem;
+	/* BACKGROUND */
+	background-color: rgb(70,70,70);
+}
+
+
+*.project:nth-child(odd) > *.text { /* every odd left column */
+	/* BACKGROUND */
+/*	background-color: rgb(90,90,90);
+	background-image: -webkit-linear-gradient(270deg,rgba(38,38,38,1.00) 0.41%,rgba(65,65,65,1.00) 100%);
+	background-image: -moz-linear-gradient(270deg,rgba(38,38,38,1.00) 0.41%,rgba(65,65,65,1.00) 100%);
+	background-image: -o-linear-gradient(270deg,rgba(38,38,38,1.00) 0.41%,rgba(65,65,65,1.00) 100%);
+	background-image: linear-gradient(180deg,rgba(38,38,38,1.00) 0.41%,rgba(65,65,65,1.00) 100.00%);
+*/}
+
+*.project:nth-child(even) > *.text { /* every even left column */
+	/* BACKGROUND */
+/*	background-color: rgb(100,100,100);
+	background-image: -webkit-linear-gradient(270deg,rgba(68,68,68,1.00) 0.82%,rgba(41,41,41,1.00) 100%);
+	background-image: -moz-linear-gradient(270deg,rgba(68,68,68,1.00) 0.82%,rgba(41,41,41,1.00) 100%);
+	background-image: -o-linear-gradient(270deg,rgba(68,68,68,1.00) 0.82%,rgba(41,41,41,1.00) 100%);
+	background-image: linear-gradient(180deg,rgba(68,68,68,1.00) 0.82%,rgba(41,41,41,1.00) 100.00%);
+*/}
+
+
+*.project h3 {
+	/* LAYOUT */
+	margin: 0 0 0.75em;
+	/* TEXT */
+	color: rgb(220,220,220);
+	font-size: 135%;
+}
+
+*.project p {
+	/* LAYOUT */
+	margin: 1.2em 0 0;
+	/* TEXT */
+	color: rgb(250,250,250);
+	line-height: 1.3;
+}
+
+/* ------------------- module END ------------------- */
+
+
+
+
+
+
+
+
+
+
+/* ------------------ */
+/* MISCELLANEOUS BITS */
+/* ------------------ */
+
+
+a img {
+	border: none;
+}
+
+*.iconrow img {
+	/* LAYOUT */
+	height: 32px; /* change to preferred row height */
+	/* DON'T TOUCH! */
+	width: auto;
+}
+
+*.iconrow a {text-decoration: none}
+*.iconrow a + a {margin-left: 0.5ex}
+
+@media only screen and (max-device-width: 480px) {
+	
+	*.iconrow img {
+		height: 96px;
+	}
+	
+}
+
+*.lift {
+	/* BACKGROUND */
+	-webkit-box-shadow: 0px 2px 4px rgba(0,0,0,0.50);
+	box-shadow: 0px 2px 4px rgba(0,0,0,0.50);
+}
+
+*.liftmore {
+	/* BACKGROUND */
+	-webkit-box-shadow: 0px 2px 4px rgba(0,0,0,0.50);
+	box-shadow: 0px 4px 6px rgba(0,0,0,0.50);
+}
+
+/* - */
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------*/
+/* turn any module containing an IMG and an A into a neat zoomy clicky thing */
+/* ------------------------------*/
+
+
+*.icon {
+    /* BACKGROUND 
+    -webkit-box-shadow: inset 0px 0px 6px rgba(0,0,0,0.5);
+    box-shadow: inset 0px 0px 6px rgba(0,0,0,0.5);*/
+	/* DON'T TOUCH! */
+	display: flex;
+	position: relative;
+	overflow: hidden;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+*.icon > img {
+    /* LAYOUT */
+    width: 80%;
+    /* ANIMATION */
+    transition: transform 0.1s;
+    /* DON'T TOUCH! */
+    height: auto;
+}
+
+*.icon:hover > img {
+	/* LAYOUT */
+	transform: scale(1.33);
+}
+
+*.icon > a {
+	/* LAYOUT */
+	padding: 0;
+	align-items: center; /* flex-start / center / flex-end / baseline */
+	/* TEXT */
+	color: rgb(255,255,255);
+	font-weight: bold;
+	line-height: 1.4;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: 0px 0px 2px rgba(0,0,0,1);
+	/* DON'T TOUCH! */
+	display: flex;
+	position: absolute;
+	top: 0.5vw;
+	right: 0.5vw;
+	bottom: 0.5vw;
+	left: 0.5vw;
+	justify-content: center;
+	align-content: center;
+}
+
+*.icon > a > * {
+	
+}
+
+/* --- *.icon end --- */

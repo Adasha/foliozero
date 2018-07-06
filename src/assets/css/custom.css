@@ -1,0 +1,128 @@
+@charset "utf-8";
+@import url("../fonts/great-vibes/stylesheet.css");
+
+
+
+@import "../fonts/great-vibes/stylesheet.css";
+
+
+
+
+
+
+
+
+
+
+#topboost {
+	/* LAYOUT */
+	padding: 0;
+	/* BACKGROUND */
+	background-image: url(../images/bg-chain-letterbox.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#topboost > * {
+	/* LAYOUT */
+	margin: 0;
+	/* TEXT */
+	color: rgba(255,250,232,0.95);
+	font-family: great_vibesregular, cursive;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 4vw;
+	text-shadow: 3px 9px 7px rgba(0,0,0,0.8);
+	text-transform: uppercase;
+	letter-spacing: 0.7em;
+	/* */
+	transform: skewY(-6deg);
+}
+
+
+
+
+
+
+
+
+
+
+#about *.media {
+	/* BACKGROUND */
+	background-image: url(../images/bigpit-lumberyard.jpg);
+	background-position: 66% center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+/* ------------------------- */
+/* I mean, why the hell not? */
+/* ------------------------- */
+
+
+*.rainbow {
+	
+}
+
+*.rainbow > * {
+	
+}
+
+*.rainbow > *:nth-child(1) {
+    /* BACKGROUND */
+    background-color: hsla(0,100%,85%,1.00);
+    background-image: none;
+}
+
+*.rainbow > *:nth-child(2) {
+	/* BACKGROUND */
+    background-color: hsla(60,100%,85%,1.00);
+	background-image: none;
+}
+
+*.rainbow > *:nth-child(3) {
+	/* BACKGROUND */
+    background-color: hsla(120,100%,85%,1.00);
+	background-image: none;
+}
+
+*.rainbow > *:nth-child(4) {
+	/* BACKGROUND */
+    background-color: hsla(180,100%,85%,1.00);
+	background-image: none;
+}
+
+*.rainbow > *:nth-child(5) {
+	/* BACKGROUND */
+    background-color: hsla(240,100%,85%,1.00);
+	background-image: none;
+}
+
+*.rainbow > *:nth-child(6) {
+	/* BACKGROUND */
+    background-color: hsla(300,100%,85%,1.00);
+	background-image: none;
+}
+
+/* ------------------- BLOCK END ------------------- */
+
+
+
+
+
+
+
+
+
+
+
