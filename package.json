@@ -1,13 +1,18 @@
 {
   "name": "zero",
   "version": "1.0.0",
-  "devDependencies": {},
   "description": "A tutorial portfolio site.",
+  "author": "Adam Shailer",
+  "keywords": [
+    "portfolio"
+  ],
+  "license": "GPL-3.0-or-later",
   "main": "web/index.html",
   "directories": {
     "doc": "docs"
   },
   "dependencies": {},
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,11 +20,6 @@
     "type": "git",
     "url": "git+https://github.com/Adasha/foliozero.git"
   },
-  "keywords": [
-    "portfolio"
-  ],
-  "author": "Adam Shailer",
-  "license": "GPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/Adasha/foliozero/issues"
   },
